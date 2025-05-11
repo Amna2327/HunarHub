@@ -1,6 +1,7 @@
 **DONE**
 - Introduced Logic for BuyerMenu
 - Created bank accounts for both Maker and Buyer and added its logic too
+- Both Buyer and Maker have the SAME attributes for now, plus an integer number to differentiate between them (1 = Maker, 0 = Buyer)
 - Added some file handling (read preexisting users from Userfile and store them to ArrayList at the start of the program, write user to file when account is created)
 
 **TO-DO LIST** 
