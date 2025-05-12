@@ -360,13 +360,15 @@ class BankAccount {
         boolean isUnique = false;
         do{
             id = 100 + rng.nextInt(900);
+            isUnique = true;
             if(userlist.isEmpty()){
                 System.out.println("Your Bank ID is "+ id);
                 return id;
             }
             for(User m:userlist){
-                if(id != m.account.getAccountID())
-                    isUnique = true;
+                if(id == m.account.getAccountID())
+                    isUnique = false;
+                    break;
             }
         } while(!isUnique); //keeps generating id until a unique one is created
         
